@@ -2,11 +2,12 @@
     --blue : #0192AA;
     --font : "poppins", "Inter", sans-serif;
     --grey : #DFDFDF;
+    --white : #F5F5F5;
 }
 
 body{
     font-family: var(--font);
-    background-color: #f5f5f5;
+    background-color: var(--white);
     margin: 0;
 }
 
@@ -38,6 +39,10 @@ nav{
 h1, h2, h5{
     text-align: center;
     margin: 0.8em 0;
+}
+
+h1{
+    font-size: 4em;
 }
 
 h2{
@@ -118,8 +123,12 @@ header .CTA{
     margin: 0 2em;
 }
 
-#hulpbehoevende .card{
+.grey{
     background-color: var(--grey);
+}
+
+.white{
+    background-color: var(--white);
 }
 
 .card p{
@@ -127,7 +136,6 @@ header .CTA{
 }
 
 .taskInfo{
-    background-color: var(--grey);
     display: flex;
     flex-direction: row;
     align-items: center;
