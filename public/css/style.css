@@ -10,7 +10,7 @@ body{
     margin: 0;
 }
 
-header{
+#header__banner{
     background-image: url(../images/site/senioren_team.jpg);
     width: 100%;
     height: 600px;
@@ -22,6 +22,18 @@ header{
     flex-direction: column;
     align-items: center;
 }
+
+
+nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 90%;
+    padding: 1em 0;
+    margin: auto;
+}
+
 
 h1, h2, h5{
     text-align: center;
@@ -39,6 +51,7 @@ h5{
 .CTA{
     background-color: var(--blue);
     font-size: 1.5em;
+    padding: 0.7em 2.5em;
 }
 
 header .CTA{
@@ -147,5 +160,17 @@ header .CTA{
 
     .topPart_Review{
         flex-direction: column;
+    }
+}
+
+/** when width under 800 flew-direction: */
+@media screen and (max-width: 800px){
+    nav{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav img{
+        margin-bottom: 1em;
     }
 }
