@@ -1,9 +1,9 @@
 :root{
-    --blue : #0192AA;
+    --blue : #255586;
     --font : "poppins", "Inter", sans-serif;
     --grey : #DFDFDF;
     --white : #F5F5F5;
-    --orange : #FF7116;
+    --orange : #ef7946;
 }
 
 body{
@@ -32,7 +32,7 @@ nav{
     align-items: center;
     justify-content: space-between;
     max-width: 90%;
-    padding: 1em 0;
+    padding: .875em 0;
     margin: auto;
 }
 
@@ -72,7 +72,7 @@ header .CTA{
     padding: 1em 0;
     height: fit-content;
     width: 100%;
-    /* background black opasity 50%*/
+    /* background black opacity 50%*/
     background-color: rgba(0,0,0,0.5);
     display: flex;
     flex-direction: column;
@@ -84,8 +84,8 @@ header .CTA{
     text-decoration: none;
     border-radius: 1em;
     color: #fff;
-    font-size: 1.5em;
-    padding: 0.7em 2.5em;
+    font-size: 1em;
+    padding: 0.7em 1.5em;
 }
 
 .topPart_Review img{
