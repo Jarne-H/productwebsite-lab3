@@ -1,9 +1,17 @@
 :root{
-    --blue : #255586;
-    --font : "poppins", "Inter", sans-serif;
+    /**get font from public/font/figtree/figtree-regular-webfont.ttf */
+    --font : "figtree", "poppins", "Inter", sans-serif;
+
     --grey : #DFDFDF;
     --white : #F5F5F5;
-    --orange : #ef7946;
+
+    --orange : #EF7946;
+    --orange__hover : #FF8F5F;
+    --orange__active : #D2521B;
+
+    --blue : #255586;
+    --blue__hover : #4C76B6;
+    --blue__active : #234364;
 }
 
 body{
@@ -80,12 +88,20 @@ header .CTA{
 }
 
 .button{
-    background-color: var(--blue);
+    background-color: var(--orange);
     text-decoration: none;
-    border-radius: 1em;
+    border-radius: 3px;
     color: #fff;
     font-size: 1em;
     padding: 0.7em 1.5em;
+}
+
+.button:hover{
+    background-color: var(--orange__hover);
+}
+
+.button:active{
+    background-color: var(--orange__active);
 }
 
 .topPart_Review img{
