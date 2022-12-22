@@ -15,6 +15,8 @@
     --blue : #255586;
     --blue__hover : #4C76B6;
     --blue__active : #234364;
+
+    --yellow : #FBC02D;
 }
 
 body{
@@ -36,6 +38,11 @@ body{
     align-items: center;
 }
 
+/**.rating img change svg color to --yellow var */
+.rating img{
+    /**change svg color to --yellow var */
+    fill: var(--yellow);
+}
 
 nav{
     display: flex;
@@ -54,6 +61,7 @@ h1, h2, h5{
 
 h1{
     font-size: 4em;
+    font-weight: bold;
 }
 
 #klussers h1, #klussers h1{
@@ -188,7 +196,7 @@ header .CTA{
 }
 
 footer{
-    background-color: var(--orange);
+    background-color: var(--blue);
     padding: 1em 0;
 }
 
