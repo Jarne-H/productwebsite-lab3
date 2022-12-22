@@ -1,8 +1,11 @@
+/**get font from google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Figtree&family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
 :root{
-    /**get font from public/font/figtree/figtree-regular-webfont.ttf */
     --font : "figtree", "poppins", "Inter", sans-serif;
 
-    --grey : #DFDFDF;
+    --grey : #ECECEF;
     --white : #F5F5F5;
 
     --orange : #EF7946;
@@ -43,7 +46,6 @@ nav{
     padding: .875em 0;
     margin: auto;
 }
-
 
 h1, h2, h5{
     text-align: center;
@@ -92,7 +94,7 @@ header .CTA{
     text-decoration: none;
     border-radius: 3px;
     color: #fff;
-    font-size: 1em;
+    font-size: 1.5em;
     padding: 0.7em 1.5em;
 }
 
