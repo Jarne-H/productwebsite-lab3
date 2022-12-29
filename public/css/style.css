@@ -198,12 +198,15 @@ header .CTA{
 footer{
     background-color: var(--blue);
     padding: 1em 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 footer p{
     color: #fff;
     text-align: center;
-    margin: 0;
+    margin: 1em 0;
 }
 
 /* when wide 1263 hide last child of #hulpbehoevnde*/
