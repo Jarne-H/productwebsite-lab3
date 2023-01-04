@@ -209,6 +209,59 @@ footer p{
     margin: 1em 0;
 }
 
+#mc_embed_signup_scroll H2{
+    font-size: 2em;
+    margin: 0.5em 0;
+}
+
+#mc_embed_signup{
+    background-color: white;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.asterisk{
+    color: red;
+}
+
+div.indicates-required{
+    /**align children top right*/
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-start;
+    width: 100%;
+    padding-bottom: 1em;
+}
+
+input#mc-embedded-subscribe.button{
+    background-color: var(--orange);
+    color: #fff;
+    border-radius: 100px;
+    font-size: 1.5em;
+    padding: 0.3em 0.3em;
+    margin: 0.7em auto;
+    width: 80%;
+    border-color: var(--orange);
+}
+
+.optionalParent .foot{
+    display: flex;
+    flex-direction: column;
+}
+
+p.brandingLogo{
+    margin: 0;
+    padding: 0;
+}
+
+.optionalParent .foot input.button{
+    margin: 0 0.1em;
+}
+
 /* when wide 1263 hide last child of #hulpbehoevnde*/
 @media screen and (max-width: 1263px){
     #hulpbehoevende .card:nth-child(3n){
