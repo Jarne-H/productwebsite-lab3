@@ -46,7 +46,10 @@
                 is_spa = 1,
                 hide_element = 'body',
                 /* DO NOT EDIT BELOW THIS LINE */
-                f = false, d = document, vwoCodeEl = document.querySelector('#vwoCode'), code = { use_existing_jquery: function () { return use_existing_jquery }, library_tolerance: function () { return library_tolerance }, finish: function () { if (!f) { f = true; var e = d.getElementById('_vis_opt_path_hides'); if (e) e.parentNode.removeChild(e) } }, finished: function () { return f }, load: function (e) { var t = d.createElement('script'); t.fetchPriority = 'high'; t.src = e; t.type = 'text/javascript'; t.innerText; t.onerror = function () { _vwo_code.finish() }; d.getElementsByTagName('head')[0].appendChild(t) }, getVersion: function () { return version }, getMatchedCookies: function (e) { var t = []; if (document.cookie) { t = document.cookie.match(e) || [] } return t }, getCombinationCookie: function () { var e = code.getMatchedCookies(/(?:^|;)\s?(_vis_opt_exp_\d+_combi=[^;$]*)/gi); e = e.map(function (e) { try { var t = decodeURIComponent(e); if (!/_vis_opt_exp_\d+_combi=(?:\d+,?)+\s*$/.test(t)) { return '' } return t } catch (e) { return '' } }); var i = []; e.forEach(function (e) { var t = e.match(/([\d,]+)/g); t && i.push(t.join('-')) }); return i.join('|') }, init: function () { window.settings_timer = setTimeout(function () { _vwo_code.finish() }, settings_tolerance); var e = d.createElement('style'), t = hide_element ? hide_element + '{opacity:0 !important;filter:alpha(opacity=0) !important;background:none !important;}' : '', i = d.getElementsByTagName('head')[0]; e.setAttribute('id', '_vis_opt_path_hides'); vwoCodeEl && e.setAttribute('nonce', vwoCodeEl.nonce); e.setAttribute('type', 'text/css'); if (e.styleSheet) e.styleSheet.cssText = t; else e.appendChild(d.createTextNode(t)); i.appendChild(e); var n = this.getCombinationCookie(); this.load('https://dev.visualwebsiteoptimizer.com/j.php?a=' + account_id + '&u=' + encodeURIComponent(d.URL) + '&f=' + +is_spa + '&vn=' + version + (n ? '&c=' + n : '')); return settings_timer } }; window._vwo_settings_timer = code.init(); return code;
+                f = false, d = document, vwoCodeEl = document.querySelector('#vwoCode'), code = { use_existing_jquery: function () { return use_existing_jquery }, library_tolerance: function () { return library_tolerance }, finish: function () { if (!f) { f = true; var e = d.getElementById('_vis_opt_path_hides'); if (e) e.parentNode.removeChild(e) } }, finished: function () { return f }, load: function (e) { var t = d.createElement('script'); t.fetchPriority = 'high'; t.src = e; t.type = 'text/javascript'; t.innerText; t.onerror = function () { _vwo_code.finish() }; d.getElementsByTagName('head')[0].appendChild(t) }, getVersion: function () { return version }, getMatchedCookies: function (e) { var t = []; if (document.cookie) { t = document.cookie.match(e) || [] } return t }, getCombinationCookie: function () { var e = code.getMatchedCookies(/(?:^|;)\s?(_vis_opt_exp_\d+_combi=[^;$]*)/gi); e = e.map(function (e) { try { var t = decodeURIComponent(e); if (!/_vis_opt_exp_\d+_combi=(?:\d+,?)+\s*$/.test(t)) { return '' } return t } catch (e) { return '' } }); var i = []; e.forEach(function (e) { var t = e.match(/([\d,]+)/g); t && i.push(t.join('-')) }); return i.join('|') }, init: function () { window.settings_timer = setTimeout(function () { _vwo_code.finish() }, settings_tolerance); var e = d.createElement('style'), t = hide_element ? hide_element + '{opacity:0 !important;filter:alpha(opacity=0) !important;background:none !important;}' : '', i = d.getElementsByTagName('head')[0]; e.setAttribute('id', '_vis_opt_path_hides'); vwoCodeEl && e.setAttribute('nonce', vwoCodeEl.nonce); e.setAttribute('type', 'text/css'); if (e.styleSheet) e.styleSheet.cssText = t; else e.appendChild(d.createTextNode(t)); i.appendChild(e); var n = this.getCombinationCookie(); this.load('https://dev.visualwebsiteoptimizer.com/j.php?a=' + account_id + '&u=' + encodeURIComponent(d.URL) + '&f=' + +is_spa + '&vn=' + version + (n ? '&c=' + n : '')); return settings_timer } }; window._vwo_settings_timer = code.init(); 
+                console.log('VWO Code Loaded');
+                return code;
+
         }());
     </script>
     <!-- End VWO Async SmartCode -->
@@ -102,7 +105,7 @@
             <section id="hulpbehoevende" class="reviewList">
                 <div class="card grey">
                     <div class="topPart_Review">
-                        <img src="public/images/profile_images/sandra.jpg" alt="foto van Sandra">
+                        <img src="public/images/profile_images/sandra.webp" alt="foto van Sandra">
                         <div class="info">
                             <h5>Sandra, 62</h5>
                             <!--five stars-->
@@ -119,7 +122,7 @@
                 </div>
                 <div class="card grey">
                     <div class="topPart_Review">
-                        <img src="public/images/profile_images/jef.jpg" alt="foto van Jef">
+                        <img src="public/images/profile_images/jef.webp" alt="foto van Jef">
                         <div class="info">
                             <h5>Jef, 71</h5>
                             <!--five stars-->
@@ -136,7 +139,7 @@
                 </div>
                 <div class="card grey">
                     <div class="topPart_Review">
-                        <img src="public/images/profile_images/Rosa.jpg" alt="foto van Rosa">
+                        <img src="public/images/profile_images/Rosa.webp" alt="foto van Rosa">
                         <div class="info">
                             <h5>Rosa, 59</h5>
                             <!--five stars-->
@@ -153,7 +156,7 @@
                 </div>
                 <div class="card grey">
                     <div class="topPart_Review">
-                        <img src="public/images/profile_images/jan.jpg" alt="foto van Jan">
+                        <img src="public/images/profile_images/jan.webp" alt="foto van Jan">
                         <div class="info">
                             <h5>Jan, 58</h5>
                             <!--five stars-->
@@ -170,7 +173,7 @@
                 </div>
                 <div class="card grey">
                     <div class="topPart_Review">
-                        <img src="public/images/profile_images/gerda.jpg" alt="foto van Gerda">
+                        <img src="public/images/profile_images/gerda.webp" alt="foto van Gerda">
                         <div class="info">
                             <h5>Gerda, 63</h5>
                             <!--five stars-->
@@ -225,7 +228,7 @@
             <section id="klusser" class="reviewList">
                 <div class="card white">
                     <div class="topPart_Review">
-                        <img src="public/images/profile_images/gerda.jpg" alt="foto van Gerda">
+                        <img src="public/images/profile_images/gerda.webp" alt="foto van Gerda">
                         <div class="info">
                             <h5>Gerda, 63</h5>
                             <!--five stars-->
@@ -242,7 +245,7 @@
                 </div>
                 <div class="card white">
                     <div class="topPart_Review">
-                        <img src="public/images/profile_images/jan.jpg" alt="foto van Jan">
+                        <img src="public/images/profile_images/jan.webp" alt="foto van Jan">
                         <div class="info">
                             <h5>Jan, 58</h5>
                             <!--five stars-->
@@ -259,7 +262,7 @@
                 </div>
                 <div class="card white">
                     <div class="topPart_Review">
-                        <img src="public/images/profile_images/sandra.jpg" alt="foto van Sandra">
+                        <img src="public/images/profile_images/sandra.webp" alt="foto van Sandra">
                         <div class="info">
                             <h5>Sandra, 62</h5>
                             <!--five stars-->
