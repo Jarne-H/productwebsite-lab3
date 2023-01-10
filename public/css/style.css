@@ -115,8 +115,6 @@ header .CTA{
 }
 
 .topPart_Review img{
-    max-width: 75px;
-    max-height: 75px;
     border-radius: 50%;
 }
 
@@ -302,6 +300,11 @@ p.brandingLogo{
 
     .topPart_Review{
         flex-direction: column;
+    }
+
+    .topPart_userImg {
+        width: 150px;
+        height: 150px;
     }
 }
 
