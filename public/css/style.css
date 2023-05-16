@@ -26,13 +26,14 @@ body{
 }
 
 p {
+    font-size: 20px;
     font-family: var(--font);
 }
 
 .header {
-    position: relative;
     top: 0;
     left: 0;
+    margin: auto;
 }
 
 #header__color {
@@ -101,6 +102,28 @@ h1, h2, h3{
 h1{
     font-size: 4em;
     font-weight: bold;
+}
+
+.uniek {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 90%;
+    padding: .875em 0;
+    margin: auto;
+    align-items: flex-start;
+    gap: 2em;
+}
+
+.uniek__text {
+    display: flex;
+    flex-direction: column;
+}
+
+#uniek__image {
+    width: 50%;
+    height: 20%;
 }
 
 #klussers h1, #klussers h1{
