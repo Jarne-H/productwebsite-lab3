@@ -1,25 +1,25 @@
 /**get font from google fonts */
-@import url('https://fonts.googleapis.com/css2?family=Figtree&family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Figtree&family=Poppins:wght@300;400;500;600;700,800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
-:root{
-    --font : "figtree", "poppins", "Inter", sans-serif;
+:root {
+    --font: "figtree", "poppins", "Inter", sans-serif;
 
-    --grey : #ECECEF;
-    --white : #F5F5F5;
+    --grey: #ECECEF;
+    --white: #F5F5F5;
 
-    --orange : #EF7946;
-    --orange__hover : #FF8F5F;
-    --orange__active : #D2521B;
+    --orange: #EF7946;
+    --orange__hover: #FF8F5F;
+    --orange__active: #D2521B;
 
-    --blue : #255586;
-    --blue__hover : #4C76B6;
-    --blue__active : #234364;
+    --blue: #255586;
+    --blue__hover: #4C76B6;
+    --blue__active: #234364;
 
-    --yellow : #FBC02D;
+    --yellow: #FBC02D;
 }
 
-body{
+body {
     font-family: var(--font);
     background-color: var(--white);
     margin: 0;
@@ -31,47 +31,62 @@ p {
 }
 
 .header {
-    top: 0;
-    left: 0;
-    margin: auto;
+    width: 100%;
+    height: calc(100vh - 92px);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: calc(100vh - 92px);
+}
+
+.header h1 {
+    font-family: 'Figtree';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 140%;
+    text-transform: uppercase;
+}
+
+.header__right,
+.header__left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 #header__color {
-  background-image: url(../images/site/orange_background_ziezo.svg);
-  position: relative;
-  background-repeat: no-repeat;
-  background-position: right;
-  width: 50%;
-  height: 950px;
-  margin-left: auto;
-  border-radius: 20px;
-  top: 100%;
+    background-image: url(../images/site/orange_background_ziezo.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: fit;
+    width: 100%;
+    height: 950px;
+    margin-left: auto;
+    border-radius: 20px;
 }
 
 #header__handyman {
-    position: relative;
-    top: -46.1em;
-    left: 10em;
-    width: 40%;
-    height: auto;
+    position: absolute;
+    min-height: calc(50vw);
+    max-height: calc(100vh - 100px);
+    z-index: 1;
+    bottom: 0;
+    left: 45%;
 }
 
 .header__card {
-  position: relative;
-  top: -50em;
-  left: 5em;
-  width: 30%;
-  float: left;
-  box-shadow: 0px 8px 48px -8px rgba(0, 0, 0, 0.25);
-    border-radius: 40px;   
-    padding: 3em;
+    width: 350px;
+    box-shadow: 0px 8px 48px -8px rgba(0, 0, 0, 0.25);
+    border-radius: 40px;
+    padding: 2em;
 }
 
-.header__text{
+.header__text {
     margin-bottom: 3em;
 }
 
-.rectangle{
+.rectangle {
     background-color: var(--orange);
     width: 3em;
     height: 0.25em;
@@ -79,12 +94,12 @@ p {
 }
 
 /**.rating img change svg color to --yellow var */
-.rating img{
+.rating img {
     /**change svg color to --yellow var */
     fill: var(--yellow);
 }
 
-nav{
+nav {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -94,12 +109,14 @@ nav{
     margin: auto;
 }
 
-h1, h2, h3{
+h1,
+h2,
+h3 {
     text-align: left;
     margin: 0.8em 0;
 }
 
-h1{
+h1 {
     font-size: 4em;
     font-weight: bold;
 }
@@ -127,7 +144,7 @@ h1{
     height: 20%;
 }
 
-.steps{
+.steps {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -140,7 +157,7 @@ h1{
     padding-bottom: 4em;
 }
 
-.step{
+.step {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -151,23 +168,23 @@ h1{
     align-items: flex-start;
     align-content: center;
     box-shadow: 0px 8px 48px -8px rgba(0, 0, 0, 0.25);
-    border-radius: 40px;   
+    border-radius: 40px;
     padding: 3em;
 }
 
-.step__icon{
+.step__icon {
     align-self: center;
 }
 
-.step__title{
+.step__title {
     align-self: center;
 }
 
-.step__text{
+.step__text {
     text-align: center;
 }
 
-.orange{
+.orange {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -181,47 +198,48 @@ h1{
     margin-left: 3em;
 }
 
-.orange__text{
+.orange__text {
     display: flex;
     flex-direction: column;
     color: var(--white);
     width: 60%;
 }
 
-#klussers h1, #klussers h1{
+#klussers h1,
+#klussers h1 {
     margin-top: 1em;
     padding-top: 0.8em;
 }
 
-#klussers{
+#klussers {
     padding-bottom: 4em;
 }
 
-h2{
+h2 {
     font-size: 3em;
 }
 
-h5{
+h5 {
     font-size: 1.5em;
 }
 
-header .CTA{
+header .CTA {
     bottom: 10px;
 }
 
-#ctaFrame{
+#ctaFrame {
     margin-top: 350px;
     padding: 1em 0;
     height: fit-content;
     width: 100%;
     /* background black opacity 50%*/
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0, 0, 0, 0.5);
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.button{
+.button {
     background-color: var(--orange);
     text-decoration: none;
     border-radius: 100px;
@@ -231,26 +249,26 @@ header .CTA{
     font-family: var(--font);
 }
 
-.button:hover{
+.button:hover {
     background-color: var(--orange__hover);
 }
 
-.button:active{
+.button:active {
     background-color: var(--orange__active);
 }
 
-.topPart_Review img{
+.topPart_Review img {
     border-radius: 50%;
 }
 
-.topPart_Review{
+.topPart_Review {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
 }
 
-.info h2{
+.info h2 {
     margin: 0.1em 0;
 }
 
@@ -258,7 +276,7 @@ header .CTA{
     padding-left: 0.5em;
 }
 
-.card{
+.card {
     width: 16em;
     display: flex;
     flex-direction: column;
@@ -269,7 +287,8 @@ header .CTA{
     margin: 2em;
 }
 
-#hulpbehoevende, #klusser{
+#hulpbehoevende,
+#klusser {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -279,7 +298,7 @@ header .CTA{
     padding: 2em 0;
 }
 
-#klusserInfo{
+#klusserInfo {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -287,25 +306,25 @@ header .CTA{
     flex-wrap: wrap;
 }
 
-.button__banner{
+.button__banner {
     width: max-content;
     margin: auto;
     padding: 4em;
 }
 
-.grey{
+.grey {
     background-color: var(--grey);
 }
 
-.white{
+.white {
     background-color: var(--white);
 }
 
-.card p{
+.card p {
     margin: 0.5em 0.5em 0.1em 0.5em;
 }
 
-.taskInfo{
+.taskInfo {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -314,18 +333,18 @@ header .CTA{
     text-align: center;
 }
 
-.taskInfo p{
+.taskInfo p {
     /*put text at top*/
     width: 200px;
 }
 
-footer{
+footer {
     background-color: var(--orange);
     padding: 1em 0;
     color: #fff;
 }
 
-.footer__container{
+.footer__container {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -333,7 +352,7 @@ footer{
     align-items: center;
 }
 
-.footer__info{
+.footer__info {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -341,34 +360,34 @@ footer{
     margin-left: 4em;
 }
 
-.footer__info__item{
+.footer__info__item {
     display: flex;
     flex-direction: column;
     align-items: left;
     width: 100%;
 }
 
-a{
+a {
     text-decoration: none;
     font-family: var(--font);
     color: var(--white);
     margin-bottom: 1em;
 }
 
-.footer__logo{
+.footer__logo {
     padding-right: 4em;
 }
 
-#mc_embed_signup_scroll div{
+#mc_embed_signup_scroll div {
     font-size: 0.8em;
 }
 
-#mc_embed_signup_scroll H2{
+#mc_embed_signup_scroll H2 {
     font-size: 1.3em;
     margin: 0.5em 0;
 }
 
-#mc_embed_signup{
+#mc_embed_signup {
     background-color: white;
     width: 600px;
     display: flex;
@@ -377,11 +396,11 @@ a{
     border-radius: 5px;
 }
 
-.asterisk{
+.asterisk {
     color: red;
 }
 
-div.indicates-required{
+div.indicates-required {
     /**align children top right*/
     display: flex;
     flex-direction: row;
@@ -391,7 +410,7 @@ div.indicates-required{
     padding-bottom: 1em;
 }
 
-input#mc-embedded-subscribe.button{
+input#mc-embedded-subscribe.button {
     background-color: var(--orange);
     color: #fff;
     border-radius: 100px;
@@ -402,54 +421,54 @@ input#mc-embedded-subscribe.button{
     border-color: var(--orange);
 }
 
-input#mc-embedded-subscribe.button:hover{
+input#mc-embedded-subscribe.button:hover {
     background-color: var(--orange__hover);
 }
 
-input#mc-embedded-subscribe.button:active{
+input#mc-embedded-subscribe.button:active {
     background-color: var(--orange__active);
 }
 
-#mce-EMAIL{
+#mce-EMAIL {
     width: 100%;
 }
 
-.optionalParent .foot{
+.optionalParent .foot {
     display: flex;
     flex-direction: column;
 }
 
-p.brandingLogo{
+p.brandingLogo {
     margin: 0;
     padding: 0;
 }
 
-.optionalParent .foot input.button{
+.optionalParent .foot input.button {
     margin: 0 0.1em;
 }
 
 /* when wide 1263 hide last child of #hulpbehoevnde*/
-@media screen and (max-width: 1263px){
-    #hulpbehoevende .card:nth-child(3n){
+@media screen and (max-width: 1263px) {
+    #hulpbehoevende .card:nth-child(3n) {
         display: none;
     }
 }
 
 /* when wide 863 hide last 3 children of #hulpbehoevende*/
-@media screen and (max-width: 863px){
-    #hulpbehoevende .card:nth-last-child(-n+3){
+@media screen and (max-width: 863px) {
+    #hulpbehoevende .card:nth-last-child(-n+3) {
         display: none;
     }
-    
-    #klusserInfo .card:nth-child(2n){
+
+    #klusserInfo .card:nth-child(2n) {
         display: none;
     }
-    
-    .taskInfo{
+
+    .taskInfo {
         flex-direction: column;
     }
 
-    .topPart_Review{
+    .topPart_Review {
         flex-direction: column;
     }
 
@@ -458,7 +477,7 @@ p.brandingLogo{
         height: 150px;
     }
 
-    #header__color{
+    #header__color {
         width: 30%;
     }
 
@@ -472,17 +491,17 @@ p.brandingLogo{
 }
 
 /** when width under 800 flew-direction: */
-@media screen and (max-width: 800px){
-    nav{
+@media screen and (max-width: 800px) {
+    nav {
         flex-direction: column;
         align-items: center;
     }
 
-    nav img{
+    nav img {
         margin-bottom: 1em;
     }
 
-    #header__color{
+    #header__color {
         display: none;
     }
 
@@ -491,9 +510,9 @@ p.brandingLogo{
         left: 0;
         width: 50%;
         float: center;
-      }
+    }
 
-      .header {
+    .header {
         position: relative;
         top: 0;
         left: 0;
