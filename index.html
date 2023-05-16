@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ziezo - Bijverdienen na pensioen</title>
     <meta name="description" content="Ziezo is een online platform waar senioren hulp kunnen vinden met allerlei klusjes in- en rond het huis.">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/public/css/style.css">
     <!-- favicon images/site/favicon_ZieZo.webp -->
     <link rel="icon" href="images/site/favicon_ZieZo.webp" type="image/webp">
     <!-- facebook meta tags-->
@@ -62,60 +62,77 @@
     <!-- End Google Tag Manager (noscript) -->
     <header>
         <nav>
-            <img src="images\site\Logo_1.svg" width="156" height="60" alt="Ziezo logo, 2 vingers vormen de 'O'">
-            <a class="CTA button" href="#">Download nu</a>
+            <img src="/public/images/site/Logo_1.svg" width="156" height="60" alt="Ziezo logo, 2 vingers vormen de 'O'">
+            <p>Klusser nodig?</p>
+            <p>Word onze klusser</p>
         </nav>
-        <div id="header__banner"></div>
+        <div class="header">
+        <div id="header__color"></div>
+        <img id="header__handyman" src="/public/images/site/ziezo_klusser.png" alt="">
+            <div class="header__card">
+                <h1>KLUSSER NODIG?</h1>
+                <div class="rectangle"></div>
+                <p class="header__text">Welkom bij Ziezo, de klusjesapp die ervaren 65-plussers verbindt met mensen die wat extra hulp kunnen gebruiken. Wij geloven dat de wijsheid, ervaring en zorgzaamheid van onze oudere generatie onmisbaar zijn en een waardevolle bijdrage kunnen leveren aan het dagelijks leven.</p>
+                <a class="CTA button" href="#">Over ons</a>
+            </div>
+        </div>
     </header>
     <main>
-        <section id="klusjes">
-            <h1>Klusser nodig?</h1>
-            <section id="hulpbegoevendeInfo" class="taskInfo grey">
-                <div>
-                    <h2>1</h2>
-                    <h3>Het klusje</h3>
-                    <p>
-                        Je hebt een klusje dat
-                        je moeilijk zelf nog kan
-                        doen? Geen probleem,
-                        plaats het op Ziezo!
-                    </p>
-                </div>
-                <div>
-                    <h2>2</h2>
-                    <h3>De uitvoering</h3>
-                    <p>
-                        Een klusser komt bij jou
-                        thuis het klusje uitvoeren
-                        Daarna kan je samen nog een
-                        koffietje drinken.
-                    </p>
-                </div>
-                <div>
-                    <h2>3</h2>
-                    <h3>Klaar!</h3>
-                    <p>
-                        Ziezo, de klus is geklaard!
-                        Vergeet je klusser niet te
-                        betalen.
+       <section class="uniek">
+        <img id="uniek__image" src="/public/images/site/garden.svg" alt="Tuinieren">
+            <div class="uniek_text">
+        <h2>Wat maakt ons uniek?</h2>
+        <p>Onze klusjespartners zijn niet alleen bekwaam en vaardig in hun vakgebied, maar ze brengen ook een schat aan levenservaring en betrokkenheid met zich mee. Ze begrijpen de waarde van menselijk contact en nemen de tijd om naar jouw wensen te luisteren. <br><br> Met Ziezo krijg je niet alleen de klus geklaard, maar bouw je ook waardevolle relaties op. Bij Ziezo hechten we veel waarde aan de veiligheid en betrouwbaarheid van ons platform. <br><br> Elk van onze klusjespartners wordt zorgvuldig gescreend en gecontroleerd, zodat jij met een gerust hart kunt genieten van hun diensten.</p>
+            </div>
+        </section>
 
-                    </p>
+        <section class="steps">
+            <div class="step">
+                <img class="step__icon" src="/public/images/site/icon _wrench_.svg" alt="Het klusje">
+                <h3 class="step__title">Het klusje</h3>
+                <p class="step__text">Je hebt een klusje dat je moeilijk zelf kan doen? <br> Geen probleem, plaats het op Ziezo!</p>
+            </div>
+            <div class="step">
+                <img class="step__icon" src="/public/images/site/icon _chevron circle left_.svg" alt="De match">
+                <h3 class="step__title">De match</h3>
+                <p class="step__text">Onze ervaren klusser komt bij jou thuis het klusje uitvoeren. <br> Daarna kan je samen nog een koffietje drinken.</p>
+            </div>
+            <div class="step">
+                <img class="step__icon" src="/public/images/site/icon _check_.svg" alt="Klaar">
+                <h3 class="step__title">Klaar!</h3>
+                <p class="step__text">Ziezo, de klus is geklaard! <br>Jouw klusje is opgeknapt en je klusser is veilig betaald via onze app. Op naar de volgende klus!</p>
+        </section>
+
+        <section class="uniek">
+                <div class="uniek_text">
+            <h2>Veilig en makkelijk</h2>
+            <p>Onze gebruiksvriendelijke app maakt het eenvoudig om een klusjespartner te vinden die perfect bij jouw behoeften past. Je kunt gemakkelijk communiceren via de app, afspraken plannen en betalingen regelen. <br><br>Bij Ziezo hechten we veel waarde aan de veiligheid en betrouwbaarheid van ons platform. We streven ernaar om een gemeenschap van vertrouwen en verbinding te creëren, waarin zowel klusjespartners als gebruikers zich comfortabel voelen.</p>
                 </div>
-            </section>
+                <img id="uniek__image" src="/public/images/site/couple_kitchen.svg" alt="Tuinieren">
+        </section>
+
+        <section class="orange">
+            <img class="orange__image" src="/public/images/site/ziezo_klusser_2.png" alt="Word klusser">
+            <div class="orange__text">
+                <h2 class="orange__title">Word zelf klusser!</h2>
+                <p>Ben je een ervaren en energieke 65-plusser die graag anderen wil helpen met klusjes in en rondom het huis? Bij Ziezo bieden we jou de mogelijkheid om je waardevolle vaardigheden en levenservaring in te zetten en een gewaardeerde klusjespartner te worden. <br><br>Als klusjespartner bij Ziezo kun je anderen ondersteunen bij diverse klusjes, variërend van kleine reparaties en onderhoudswerkzaamheden tot tuinwerkzaamheden doen. Jouw inzet maakt een positief verschil in het leven van mensen die wat extra hulp nodig hebben.</p>
+            </div>
+        </section>
+
             <section id="hulpbehoevende" class="reviewList">
                 <div class="card grey">
                     <div class="topPart_Review">
-                        <img height="75" width="75" src="images/profile_images/sandra.webp" alt="foto van Sandra"
+                        <img height="75" width="75" src="/public/images/profile_images/sandra.webp" alt="foto van Sandra"
                             class="topPart_userImg" loading="lazy">
                         <div class="info">
                             <h3>Sandra, 62</h3>
                             <!--five stars-->
                             <div class="rating">
-                                <img height="18" width="20" src="images/site/full_star.svg" alt="star" loading="lazy">
-                                <img height="18" width="20" src="images/site/full_star.svg" alt="star" loading="lazy">
-                                <img height="18" width="20" src="images/site/full_star.svg" alt="star" loading="lazy">
-                                <img height="18" width="20" src="images/site/full_star.svg" alt="star" loading="lazy">
-                                <img height="18" width="20" src="images/site/empty_star.svg" alt="star" loading="lazy">
+                                <img height="18" width="20" src="/public/images/site/full_star.svg" alt="star" loading="lazy">
+                                <img height="18" width="20" src="/public/images/site/full_star.svg" alt="star" loading="lazy">
+                                <img height="18" width="20" src="/public/images/site/full_star.svg" alt="star" loading="lazy">
+                                <img height="18" width="20" src="/public/images/site/full_star.svg" alt="star" loading="lazy">
+                                <img height="18" width="20" src="/public/images/site/empty_star.svg" alt="star" loading="lazy">
                             </div>
                         </div>
                     </div>
@@ -123,17 +140,17 @@
                 </div>
                 <div class="card grey">
                     <div class="topPart_Review">
-                        <img height="75" width="75" src="images/profile_images/jef.webp" alt="foto van Jef"
+                        <img height="75" width="75" src="/public/images/profile_images/jef.webp" alt="foto van Jef"
                             class="topPart_userImg" loading="lazy">
                         <div class="info">
                             <h3>Jef, 71</h3>
                             <!--five stars-->
                             <div class="rating">
-                                <img height="18" width="20" src="images/site/full_star.svg" alt="star" loading="lazy">
-                                <img height="18" width="20" src="images/site/full_star.svg" alt="star" loading="lazy">
-                                <img height="18" width="20" src="images/site/full_star.svg" alt="star" loading="lazy">
-                                <img height="18" width="20" src="images/site/full_star.svg" alt="star" loading="lazy">
-                                <img height="18" width="20" src="images/site/full_star.svg" alt="star" loading="lazy">
+                                <img height="18" width="20" src="/public/images/site/full_star.svg" alt="star" loading="lazy">
+                                <img height="18" width="20" src="/public/images/site/full_star.svg" alt="star" loading="lazy">
+                                <img height="18" width="20" src="/public/images/site/full_star.svg" alt="star" loading="lazy">
+                                <img height="18" width="20" src="/public/images/site/full_star.svg" alt="star" loading="lazy">
+                                <img height="18" width="20" src="/public/images/site/full_star.svg" alt="star" loading="lazy">
                             </div>
                         </div>
                     </div>
@@ -141,17 +158,17 @@
                 </div>
                 <div class="card grey">
                     <div class="topPart_Review">
-                        <img height="75" width="75" src="images/profile_images/Rosa.webp" alt="foto van Rosa"
+                        <img height="75" width="75" src="/public/images/profile_images/Rosa.webp" alt="foto van Rosa"
                             class="topPart_userImg" loading="lazy">
                         <div class="info">
                             <h3>Rosa, 59</h3>
                             <!--five stars-->
                             <div class="rating">
-                                <img height="18" width="20" src="images/site/full_star.svg" alt="star" loading="lazy">
-                                <img height="18" width="20" src="images/site/full_star.svg" alt="star" loading="lazy">
-                                <img height="18" width="20" src="images/site/full_star.svg" alt="star" loading="lazy">
-                                <img height="18" width="20" src="images/site/full_star.svg" alt="star" loading="lazy">
-                                <img height="18" width="20" src="images/site/empty_star.svg" alt="star" loading="lazy">
+                                <img height="18" width="20" src="/public/images/site/full_star.svg" alt="star" loading="lazy">
+                                <img height="18" width="20" src="/public/images/site/full_star.svg" alt="star" loading="lazy">
+                                <img height="18" width="20" src="/public/images/site/full_star.svg" alt="star" loading="lazy">
+                                <img height="18" width="20" src="/public/images/site/full_star.svg" alt="star" loading="lazy">
+                                <img height="18" width="20" src="/public/images/site/empty_star.svg" alt="star" loading="lazy">
                             </div>width="20" 
                         </div>
                     </div>
@@ -159,16 +176,16 @@
                 </div>
                 <div class="card grey">
                     <div class="topPart_Review">
-                        <img height="75" width="75" src="images/profile_images/jan.webp" alt="foto van Jan" loading="lazy">
+                        <img height="75" width="75" src="/public/images/profile_images/jan.webp" alt="foto van Jan" loading="lazy">
                         <div class="info">
                             <h3>Jan, 58</h3>
                             <!--five stars-->
                             <div class="rating">
-                                <img height="18" width="20" src="images/site/full_star.svg" alt="star" loading="lazy">
-                                <img height="18" width="20" src="images/site/full_star.svg" alt="star" loading="lazy">
-                                <img height="18" width="20" src="images/site/full_star.svg" alt="star" loading="lazy">
-                                <img height="18" width="20" src="images/site/full_star.svg" alt="star" loading="lazy">
-                                <img height="18" width="20" src="images/site/full_star.svg" alt="star" loading="lazy">
+                                <img height="18" width="20" src="/public/images/site/full_star.svg" alt="star" loading="lazy">
+                                <img height="18" width="20" src="/public/images/site/full_star.svg" alt="star" loading="lazy">
+                                <img height="18" width="20" src="/public/images/site/full_star.svg" alt="star" loading="lazy">
+                                <img height="18" width="20" src="/public/images/site/full_star.svg" alt="star" loading="lazy">
+                                <img height="18" width="20" src="/public/images/site/full_star.svg" alt="star" loading="lazy">
                             </div>
                         </div>
                     </div>
@@ -176,17 +193,17 @@
                 </div>
                 <div class="card grey">
                     <div class="topPart_Review">
-                        <img height="75" width="75" src="images/profile_images/gerda.webp" alt="foto van Gerda"
+                        <img height="75" width="75" src="/public/images/profile_images/gerda.webp" alt="foto van Gerda"
                             class="topPart_userImg" loading="lazy">
                         <div class="info">
                             <h3>Gerda, 63</h3>
                             <!--five stars-->
                             <div class="rating">
-                                <img height="18" width="20" src="images/site/full_star.svg" alt="star" loading="lazy">
-                                <img height="18" width="20" src="images/site/full_star.svg" alt="star" loading="lazy">
-                                <img height="18" width="20" src="images/site/full_star.svg" alt="star" loading="lazy">
-                                <img height="18" width="20" src="images/site/full_star.svg" alt="star" loading="lazy">
-                                <img height="18" width="20" src="images/site/full_star.svg" alt="star" loading="lazy">
+                                <img height="18" width="20" src="/public/images/site/full_star.svg" alt="star" loading="lazy">
+                                <img height="18" width="20" src="/public/images/site/full_star.svg" alt="star" loading="lazy">
+                                <img height="18" width="20" src="/public/images/site/full_star.svg" alt="star" loading="lazy">
+                                <img height="18" width="20" src="/public/images/site/full_star.svg" alt="star" loading="lazy">
+                                <img height="18" width="20" src="/public/images/site/full_star.svg" alt="star" loading="lazy">
                             </div>
                         </div>
                     </div>
@@ -197,140 +214,29 @@
                 <a class="CTA button" href="#">Maak vandaag nog je account!</a>
             </div>
         </section>
-        <section id="klussers" class="grey">
-            <h1>Wordt onze volgende klusser!</h1>
-            <section id="klusserInfo" class="taskInfo white">
-                <div>
-                    <h2>1</h2>
-                    <h3>Het klusje</h3>
-                    <p>
-                        Je bent op pensioen
-                        en wilt wat bijverdienen?
-                        Word klusser bij Ziezo!
-                        Zo help je andere senioren.
-                    </p>
-                </div>
-                <div>
-                    <h2>2</h2>
-                    <h3>De uitvoering</h3>
-                    <p>
-                        Je gaat bij iemand anders
-                        thuis het klusje klaren.
-                        Daarna kan je samen misschien
-                        nog een koffietje drinken.
-                    </p>
-                </div>
-                <div>
-                    <h2>3</h2>
-                    <h3>Klaar!</h3>
-                    <p>
-                        Ziezo, de klus is geklaard,
-                        en jij hebt er ook wat aan verdiend.
-                    </p>
-                </div>
-            </section>
-            <section id="klusser" class="reviewList">
-                <div class="card white">
-                    <div class="topPart_Review">
-                        <img height="75" width="75" src="images/profile_images/gerda.webp" alt="foto van Gerda"
-                            class="topPart_userImg">
-                        <div class="info">
-                            <h3>Gerda, 63</h3>
-                            <!--five stars-->
-                            <div class="rating">
-                                <img height="18" width="20" src="images/site/full_star.svg" alt="star">
-                                <img height="18" width="20" src="images/site/full_star.svg" alt="star">
-                                <img height="18" width="20" src="images/site/full_star.svg" alt="star">
-                                <img height="18" width="20" src="images/site/full_star.svg" alt="star">
-                                <img height="18" width="20" src="images/site/full_star.svg" alt="star">
-                            </div>
-                        </div>
-                    </div>
-                    <p class="review">Het was een hele fijne man die duidelijk wist wat hij moest doen.</p>
-                </div>
-                <div class="card white">
-                    <div class="topPart_Review">
-                        <img height="75" width="75" src="images/profile_images/jan.webp" alt="foto van Jan"
-                            class="topPart_userImg">
-                        <div class="info">
-                            <h3>Jan, 58</h3>
-                            <!--five stars-->
-                            <div class="rating">
-                                <img height="18" width="20" src="images/site/full_star.svg" alt="star">
-                                <img height="18" width="20" src="images/site/full_star.svg" alt="star">
-                                <img height="18" width="20" src="images/site/full_star.svg" alt="star">
-                                <img height="18" width="20" src="images/site/full_star.svg" alt="star">
-                                <img height="18" width="20" src="images/site/empty_star.svg" alt="star">
-                            </div>
-                        </div>
-                    </div>
-                    <p class="review">Het was een hele fijne man die duidelijk wist wat hij moest doen.</p>
-                </div>
-                <div class="card white">
-                    <div class="topPart_Review">
-                        <img height="75" width="75" src="images/profile_images/sandra.webp" alt="foto van Sandra"
-                            class="topPart_userImg">
-                        <div class="info">
-                            <h3>Sandra, 62</h3>
-                            <!--five stars-->
-                            <div class="rating">
-                                <img height="18" width="20" src="images/site/full_star.svg" alt="star">
-                                <img height="18" width="20" src="images/site/full_star.svg" alt="star">
-                                <img height="18" width="20" src="images/site/full_star.svg" alt="star">
-                                <img height="18" width="20" src="images/site/full_star.svg" alt="star">
-                                <img height="18" width="20" src="images/site/empty_star.svg" alt="star">
-                            </div>
-                        </div>
-                    </div>
-                    <p class="review">Het was een hele fijne man die duidelijk wist wat hij moest doen.</p>
-                </div>
-            </section>
-            <div class="button__banner">
-                <a class="CTA button" href="#">Begin vandaag al!</a>
-            </div>
+       
         </section>
         <footer>
-            <!-- Begin Mailchimp Signup Form -->
-            <div id="mc_embed_signup">
-                <form
-                    action="https://duckstyle.us21.list-manage.com/subscribe/post?u=63649b6e428427ed7fd237dab&amp;id=d64ad81cbb&amp;f_id=0008cae1f0"
-                    method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
-                    target="_self">
-                    <div id="mc_embed_signup_scroll">
-                        <h2>Abboneer</h2>
-                        <div class="indicates-required"><span class="asterisk">*</span> verplicht</div>
-                        <div class="mc-field-group">
-                            <label for="mce-EMAIL">Email Address <span class="asterisk">*</span>
-                            </label>
-                            <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" required>
-                            <span id="mce-EMAIL-HELPERTEXT" class="helper_text"></span>
-                        </div>
-                        <div hidden="true"><input type="hidden" name="tags" value="5742"></div>
-                        <div id="mce-responses" class="clear foot">
-                            <div class="response" id="mce-error-response" style="display:none"></div>
-                            <div class="response" id="mce-success-response" style="display:none"></div>
-                        </div>
-                        <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                        <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text"
-                                name="b_63649b6e428427ed7fd237dab_d64ad81cbb" tabindex="-1" value=""></div>
-                        <div class="optionalParent">
-                            <div class="clear foot">
-                                <input type="submit" value="Abboneer nu" name="subscribe" id="mc-embedded-subscribe"
-                                    class="button">
-                                <p class="brandingLogo"><a href="http://eepurl.com/igpAh3"
-                                        title="Mailchimp - email marketing made easy and fun">
-                                        <img height="42" width="244" alt="Mailchimp - email marketing made easy and fun"
-                                            src="https://eep.io/mc-cdn-images/template_images/branding_logo_text_dark_dtp.svg"></a>
-                                </p>
-                            </div>
-                        </div>
+            <div class="footer__container">
+                <div class="footer__info">
+                    <div class="footer__info__item">
+                        <h3>Contact</h3>
+                        <a href="#">ziezoapp@outlook.com</a>
+                        <a href="#">Rhagenoplein21</a>
+                        <a href="#">2800 Mechelen</a>
                     </div>
-                </form>
-            </div>
-
-            <!--End mc_embed_signup-->
+                    <div class="footer__info__item">
+                        <h3>Navigatie</h3>
+                        <a href="#">Klusser nodig?</a>
+                        <a href="#">Wat maakt ons uniek</a>
+                        <a href="#">Veilig en makkelijk</a>
+                        <a href="#">Word zelf klusser</a>
+                    </div>
+                </div>
+                <div class="footer__logo">
+                    <img src="/public/images/site/Logo_white.svg" alt="logo" loading="lazy">
+                </div>
             <!--copyright-->
-            <p>&copy; 2022 Ziezo</p>
         </footer>
     </main>
     <!-- Mopinion Pastea.se  start -->
