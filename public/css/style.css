@@ -25,17 +25,56 @@ body{
     margin: 0;
 }
 
-#header__banner{
-    background-image: url(../images/site/senioren_team.webp);
-    width: 100%;
-    height: 600px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 40% 40%;
+p {
+    font-family: var(--font);
+}
+
+.header {
     position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    top: 0;
+    left: 0;
+}
+
+#header__color {
+  background-image: url(../images/site/orange_background_ziezo.svg);
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: right;
+  width: 50%;
+  height: 950px;
+  margin-left: auto;
+  border-radius: 20px;
+  top: 100%;
+}
+
+#header__handyman {
+    position: relative;
+    top: -46.1em;
+    left: 10em;
+    width: 40%;
+    height: auto;
+}
+
+.header__card {
+  position: relative;
+  top: -50em;
+  left: 5em;
+  width: 30%;
+  float: left;
+  box-shadow: 0px 8px 48px -8px rgba(0, 0, 0, 0.25);
+    border-radius: 40px;   
+    padding: 3em;
+}
+
+.header__text{
+    margin-bottom: 3em;
+}
+
+.rectangle{
+    background-color: var(--orange);
+    width: 3em;
+    height: 0.25em;
+    margin-bottom: 2em;
 }
 
 /**.rating img change svg color to --yellow var */
@@ -55,7 +94,7 @@ nav{
 }
 
 h1, h2, h3{
-    text-align: center;
+    text-align: left;
     margin: 0.8em 0;
 }
 
@@ -103,7 +142,8 @@ header .CTA{
     border-radius: 100px;
     color: #fff;
     font-size: 1.5em;
-    padding: 0.7em 1.5em;
+    padding: 0.5em 1em;
+    font-family: var(--font);
 }
 
 .button:hover{
@@ -306,6 +346,18 @@ p.brandingLogo{
         width: 150px;
         height: 150px;
     }
+
+    #header__color{
+        width: 30%;
+    }
+
+    #header__handyman {
+        position: relative;
+        top: -30.9em;
+        left: 5em;
+        width: 47%;
+        height: auto;
+    }
 }
 
 /** when width under 800 flew-direction: */
@@ -317,5 +369,23 @@ p.brandingLogo{
 
     nav img{
         margin-bottom: 1em;
+    }
+
+    #header__color{
+        display: none;
+    }
+
+    .header__card {
+        top: 0;
+        left: 0;
+        width: 50%;
+        float: center;
+      }
+
+      .header {
+        position: relative;
+        top: 0;
+        left: 0;
+        align-items: center;
     }
 }

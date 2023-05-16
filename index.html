@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ziezo - Bijverdienen na pensioen</title>
     <meta name="description" content="Ziezo is een online platform waar senioren hulp kunnen vinden met allerlei klusjes in- en rond het huis.">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/public/css/style.css">
     <!-- favicon images/site/favicon_ZieZo.webp -->
     <link rel="icon" href="images/site/favicon_ZieZo.webp" type="image/webp">
     <!-- facebook meta tags-->
@@ -62,13 +62,23 @@
     <!-- End Google Tag Manager (noscript) -->
     <header>
         <nav>
-            <img src="images\site\Logo_1.svg" width="156" height="60" alt="Ziezo logo, 2 vingers vormen de 'O'">
-            <a class="CTA button" href="#">Download nu</a>
+            <img src="/public/images/site/Logo_1.svg" width="156" height="60" alt="Ziezo logo, 2 vingers vormen de 'O'">
+            <p>Klusser nodig?</p>
+            <p>Word onze klusser</p>
         </nav>
-        <div id="header__banner"></div>
+        <div class="header">
+        <div id="header__color"></div>
+        <img id="header__handyman" src="/public/images/site/ziezo_klusser.png" alt="">
+            <div class="header__card">
+                <h1>KLUSSER NODIG?</h1>
+                <div class="rectangle"></div>
+                <p class="header__text">Welkom bij Ziezo, de klusjesapp die ervaren 65-plussers verbindt met mensen die wat extra hulp kunnen gebruiken. Wij geloven dat de wijsheid, ervaring en zorgzaamheid van onze oudere generatie onmisbaar zijn en een waardevolle bijdrage kunnen leveren aan het dagelijks leven.</p>
+                <a class="CTA button" href="#">Over ons</a>
+            </div>
+        </div>
     </header>
     <main>
-        <section id="klusjes">
+       <!-- <section id="klusjes">
             <h1>Klusser nodig?</h1>
             <section id="hulpbegoevendeInfo" class="taskInfo grey">
                 <div>
