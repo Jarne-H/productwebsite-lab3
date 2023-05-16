@@ -137,6 +137,7 @@ h1{
     margin: auto;
     align-items: flex-start;
     gap: 2em;
+    padding-bottom: 4em;
 }
 
 .step{
@@ -164,6 +165,27 @@ h1{
 
 .step__text{
     text-align: center;
+}
+
+.orange{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: var(--orange);
+    gap: 5em;
+}
+
+.orange__image {
+    width: 25%;
+    height: 20%;
+    margin-left: 3em;
+}
+
+.orange__text{
+    display: flex;
+    flex-direction: column;
+    color: var(--white);
+    width: 60%;
 }
 
 #klussers h1, #klussers h1{
@@ -268,6 +290,7 @@ header .CTA{
 .button__banner{
     width: max-content;
     margin: auto;
+    padding: 4em;
 }
 
 .grey{
@@ -297,19 +320,44 @@ header .CTA{
 }
 
 footer{
-    background-color: var(--blue);
+    background-color: var(--orange);
     padding: 1em 0;
+    color: #fff;
+}
+
+.footer__container{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 100%;
     align-items: center;
 }
 
-footer p{
-    color: #fff;
-    text-align: center;
-    margin: 1em 0;
+.footer__info{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 100%;
+    margin-left: 4em;
 }
 
+.footer__info__item{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    width: 100%;
+}
+
+a{
+    text-decoration: none;
+    font-family: var(--font);
+    color: var(--white);
+    margin-bottom: 1em;
+}
+
+.footer__logo{
+    padding-right: 4em;
+}
 
 #mc_embed_signup_scroll div{
     font-size: 0.8em;
