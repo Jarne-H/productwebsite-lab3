@@ -455,7 +455,7 @@ p.brandingLogo {
 }
 
 /* when wide 863 hide last 3 children of #hulpbehoevende*/
-@media screen and (max-width: 863px) {
+@media screen and (max-width: 1024px) {
     #hulpbehoevende .card:nth-last-child(-n+3) {
         display: none;
     }
@@ -488,10 +488,7 @@ p.brandingLogo {
         width: 47%;
         height: auto;
     }
-}
 
-/** when width under 800 flew-direction: */
-@media screen and (max-width: 800px) {
     nav {
         flex-direction: column;
         align-items: center;
@@ -501,21 +498,186 @@ p.brandingLogo {
         margin-bottom: 1em;
     }
 
-    #header__color {
+    .header {
+        grid-template-columns: 1fr;
+      }
+    
+      .header__right {
         display: none;
+      }
+    
+      .header__card {
+        text-align: center;
+        align-items: center;
+        max-width: 70%;
+        margin-top: -10em;
+      }
+    
+      .header__text {
+        margin-bottom: 20px;
+      }
+
+      .uniek {
+        display: flex;
+        flex-direction: column;
+        max-width: 70%;
+        margin: auto;
+        gap: 0em;
+        padding-bottom: 2em;
+        align-self: center;
+    }
+    
+    #uniek__image {
+        width: 80%;
     }
 
-    .header__card {
-        top: 0;
-        left: 0;
+    .steps {
+        flex-direction: column;
         width: 50%;
-        float: center;
+    }
+    
+    .orange {
+        flex-direction: column-reverse;
+        gap: 0em;
+    }
+    
+    .orange__image {
+        margin-left: 0em;
+    }
+    
+    .orange__text {
+        width: 70%;
+    }
+
+    #hulpbehoevende {
+        flex-direction: column;
+        gap: 0em;
+    }
+
+    .footer__container {
+        flex-direction: column;
+        width: 90%;
+        align-self: center;
+    }
+
+    .footer__logo {
+        margin-top: 2em;
+    }
+
+    .footer__info {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        width: 90%;
+        margin-left: 0em;
+    }
+    
+    .footer__info__item {
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        width: 90%;
+    }
+
+    footer {
+        padding: 0em 0;
+        display: flex;
+    }
+
+}
+
+/** when width under 800 flew-direction: */
+@media screen and (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav img {
+        margin-bottom: 1em;
     }
 
     .header {
-        position: relative;
-        top: 0;
-        left: 0;
+        grid-template-columns: 1fr;
+      }
+    
+      .header__right {
+        display: none;
+      }
+    
+      .header__card {
+        text-align: center;
         align-items: center;
+        max-width: 70%;
+        margin-top: -8em;
+      }
+    
+      .header__text {
+        margin-bottom: 20px;
+      }
+
+      .uniek {
+        display: flex;
+        flex-direction: column;
+        max-width: 90%;
+        margin: auto;
+        gap: 0em;
+        padding-bottom: 2em;
+    }
+    
+    #uniek__image {
+        width: 100%;
+    }
+
+    .steps {
+        flex-direction: column;
+    }
+    
+    .orange {
+        flex-direction: column-reverse;
+        gap: 0em;
+    }
+    
+    .orange__image {
+        margin-left: 0em;
+    }
+    
+    .orange__text {
+        width: 90%;
+    }
+
+    #hulpbehoevende {
+        flex-direction: column;
+        gap: 0em;
+    }
+
+    .footer__container {
+        flex-direction: column;
+        width: 90%;
+        align-self: center;
+    }
+
+    .footer__logo {
+        margin-top: 2em;
+    }
+
+    .footer__info {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        width: 90%;
+        margin-left: 0em;
+    }
+    
+    .footer__info__item {
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        width: 90%;
+    }
+
+    footer {
+        padding: 0em 0;
+        display: flex;
     }
 }
