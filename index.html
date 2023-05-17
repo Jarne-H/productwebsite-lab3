@@ -64,11 +64,11 @@
     <header>
         <nav>
             <img src="/public/images/site/Logo_1.svg" width="156" height="60" alt="Ziezo logo, 2 vingers vormen de 'O'">
-            <p>Klusser nodig?</p>
-            <p>Word onze klusser</p>
+            <a href="#uniek_section">Klusser nodig?</a>
+            <a href="#word_klusser">Word onze klusser</a>
         </nav>
         <div class="header">
-            <div class="header__left">
+            <div id="header__klusser" class="header__left">
                 <div class="header__card">
                     <h1>Klusser nodig?</h1>
                     <div class="rectangle"></div>
@@ -76,7 +76,7 @@
                         wat extra hulp kunnen gebruiken. Wij geloven dat de wijsheid, ervaring en zorgzaamheid van onze
                         oudere generatie onmisbaar zijn en een waardevolle bijdrage kunnen leveren aan het dagelijks leven.
                     </p>
-                    <a class="CTA button" href="#">Over ons</a>
+                    <a class="CTA button" href="#uniek_section">Over ons</a>
                 </div>
             </div>
             <div class="header__right">
@@ -86,7 +86,7 @@
         </div>
     </header>
     <main>
-        <section class="uniek">
+        <section class="uniek" id="uniek_section">
             <img id="uniek__image" src="/public/images/site/garden.svg" alt="Tuinieren">
             <div class="uniek_text">
                 <h2>Wat maakt ons uniek?</h2>
@@ -120,7 +120,7 @@
                     betaald via onze app. Op naar de volgende klus!</p>
         </section>
 
-        <section class="uniek">
+        <section id="veilig" class="uniek">
             <div class="uniek_text">
                 <h2>Veilig en makkelijk</h2>
                 <p>Onze gebruiksvriendelijke app maakt het eenvoudig om een klusjespartner te vinden die perfect bij
@@ -132,7 +132,7 @@
             <img id="uniek__image" src="/public/images/site/couple_kitchen.svg" alt="Tuinieren">
         </section>
 
-        <section class="orange">
+        <section class="orange" id="word_klusser">
             <img class="orange__image" src="/public/images/site/ziezo_klusser_2.png" alt="Word klusser">
             <div class="orange__text">
                 <h2 class="orange__title">Word zelf klusser!</h2>
@@ -273,16 +273,16 @@
                 <div class="footer__info">
                     <div class="footer__info__item">
                         <h3>Contact</h3>
-                        <a href="#">ziezoapp@outlook.com</a>
-                        <a href="#">Rhagenoplein21</a>
-                        <a href="#">2800 Mechelen</a>
+                        <a id="footer__link" href="mailto:ziezoapp@outlook.com">ziezoapp@outlook.com</a>
+                        <a id="footer__link" href="https://goo.gl/maps/ABAaMyuySTgEiRUB9" target=”_blank”>Rhagenoplein 21</a>
+                        <a id="footer__link" href="https://goo.gl/maps/ABAaMyuySTgEiRUB9" target=”_blank”>2800 Mechelen</a>
                     </div>
                     <div class="footer__info__item">
                         <h3>Navigatie</h3>
-                        <a href="#">Klusser nodig?</a>
-                        <a href="#">Wat maakt ons uniek</a>
-                        <a href="#">Veilig en makkelijk</a>
-                        <a href="#">Word zelf klusser</a>
+                        <a id="footer__link" href="#header__klusser">Klusser nodig?</a>
+                        <a id="footer__link" href="#uniek_section">Wat maakt ons uniek</a>
+                        <a id="footer__link" href="#veilig">Veilig en makkelijk</a>
+                        <a id="footer__link" href="#word_klusser">Word zelf klusser</a>
                     </div>
                 </div>
                 <div class="footer__logo">
