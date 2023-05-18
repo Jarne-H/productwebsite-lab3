@@ -131,6 +131,7 @@ h3 {
 h1 {
     font-size: 4em;
     font-weight: bold;
+    font-family: (var(--font));
 }
 
 .uniek {
