@@ -511,24 +511,26 @@ p.brandingLogo {
 
     .header {
         grid-template-columns: 1fr;
+        display: initial;
       }
     
-      .header__right {
+    .header__right {
         display: none;
-      }
+    }
     
-      .header__card {
+    .header__card {
         text-align: center;
         align-items: center;
         max-width: 70%;
-        margin-top: 5em;
-      }
+        margin-top: 2em;
+        margin-bottom: 2em;
+    }
     
-      .header__text {
+    .header__text {
         margin-bottom: 20px;
-      }
+    }
 
-      .uniek {
+    .uniek {
         display: flex;
         flex-direction: column;
         max-width: 70%;
@@ -611,25 +613,25 @@ p.brandingLogo {
 
     .header {
         grid-template-columns: 1fr;
-      }
+    }
     
-      .header__right {
+    .header__right {
         display: none;
-      }
+    }
     
-      .header__card {
+    .header__card {
         text-align: center;
         align-items: center;
         max-width: 70%;
         margin-top: 2em;
         margin-bottom: 2em;
-      }
+    }
     
-      .header__text {
+    .header__text {
         margin-bottom: 20px;
-      }
+    }
 
-      .uniek {
+    .uniek {
         display: flex;
         flex-direction: column;
         max-width: 90%;
@@ -644,6 +646,7 @@ p.brandingLogo {
 
     .steps {
         flex-direction: column;
+        width: 80%;
     }
     
     .orange {
@@ -692,5 +695,20 @@ p.brandingLogo {
     footer {
         padding: 0em 0;
         display: flex;
+    }
+}
+
+@media screen and (max-width: 458px) {
+    .step {
+        width: 80%;
+        padding: 1.5em;
+    }
+    .card {
+        width: 80%;
+        padding: 0.5em;
+    }
+    .card img{
+        max-width: 100px;
+        max-height: 100px;
     }
 }
